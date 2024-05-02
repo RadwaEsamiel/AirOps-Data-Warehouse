@@ -1,0 +1,21 @@
+CREATE TABLE fact_reservations (
+    Scheduled_Departure_Date_Key INT, 
+    Scheduled_Departure_Time_Key INT, 
+    Passenger_Key INT, 
+    Passenger_Profile_Key INT, 
+    Origin_Airport_Key INT, 
+    Destination_Airport_Key INT, 
+    Aircraft_Key INT, 
+    Class_of_Service_Key INT, 
+    Fare_Basis_Key INT, 
+    Booking_Channel_Key INT,
+    City_Pair_Route_Key INT, 
+    Confirmation_Number VARCHAR(255), 
+    Segment_Sequence_Number INT, 
+    Flight_Number VARCHAR(255), 
+    Base_Fare_Revenue DECIMAL(18,2), 
+    Passenger_Facility_Charges DECIMAL(18,2), 
+    Airport_Tax DECIMAL(18,2), 
+    Government_Tax DECIMAL(18,2), 
+    Transaction_Fees DECIMAL(18,2)
+);

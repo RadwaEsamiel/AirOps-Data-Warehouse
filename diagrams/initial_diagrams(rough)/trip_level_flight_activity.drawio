@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-04-30T07:38:19.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="BZIZahn762G_rM1E15i8" version="22.1.21" type="device">
+  <diagram name="Page-1" id="SIGnsm225GO5JNdO_QR3">
+    <mxGraphModel dx="1235" dy="731" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-7" value="Date Dimension" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="970" y="78" width="220" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-9" value="Date Key (PK)&lt;br&gt;Date&lt;br&gt;Day of the Week&lt;br&gt;Day of the Month&lt;br&gt;Day of the Year&lt;br&gt;Week Number&lt;br&gt;Month&lt;br&gt;Quarter&lt;br&gt;Year&lt;br&gt;Holiday Indicator&lt;br&gt;Weekday/Weekend Indicator&lt;br&gt;Season&lt;br&gt;Fiscal Period&lt;br&gt;Fiscal Year&lt;br&gt;Financial Period&lt;br&gt;Financial Year&lt;br&gt;Quarter Start/End Dates&lt;br&gt;Month Start/End Dates&lt;br&gt;Week Start/End Dates&lt;br&gt;Day Type&lt;br&gt;Leap Year Indicator" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MRyLyyOabHNhzb7I_ngH-7" vertex="1">
+          <mxGeometry x="5" y="20" width="215" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-11" value="Passenger Profile Dimension" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="200" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-12" value="Passenger Profile Key (SK)&lt;br&gt;Frequent Flyer&lt;br&gt;Tier Home Airport&lt;br&gt;Club Membership Status&lt;br&gt;Lifetime Mileage Tier" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MRyLyyOabHNhzb7I_ngH-11" vertex="1">
+          <mxGeometry x="4" y="20" width="210" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-13" value="Booking Channel Dimension" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="205" y="390" width="213" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MRyLyyOabHNhzb7I_ngH-14" value="Booking Channel Key (SK)&lt;br&gt;Booking Channel ID&lt;br&gt;Booking Channel Name&lt;br&gt;Booking Channel Type&lt;br&gt;Online/Offline Indicator" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MRyLyyOabHNhzb7I_ngH-13" vertex="1">
+          <mxGeometry x="6" y="26" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-1" value="Flight Activity Trip" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="244" width="315" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;Segment Origin Airport Key (FK)&lt;br&gt;Segment Destination&amp;nbsp;&amp;nbsp;Airport Key (FK)&lt;/div&gt;Booking Channel Key (FK)&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Scheduled Departure Date Key (FK)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Scheduled Departure&amp;nbsp;Time Key (FK)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Actual Departure Date Key (FK)&lt;br&gt;Actual Departure Time Key (FK)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Passenger Key (FK)&lt;br&gt;Passenger Profile Key (FK)&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Confirmation Number (DD)&lt;br&gt;Base Fare Revenue&amp;nbsp;&lt;br&gt;Overnight Stay&lt;br&gt;Passenger Facility Charges&lt;br&gt;Airport Tax&lt;br&gt;Government Tax&lt;br&gt;Baggage Charges&lt;br&gt;Upgrade Fees&lt;br&gt;Transaction Fees&lt;br&gt;Segment Miles Flown&lt;br&gt;Segment Miles Earned&lt;br&gt;Trip Duration&lt;br&gt;Overnight Stay Duration&lt;br&gt;Delay Duration&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="QLK3rIu6q7QLbEW4n9um-1" vertex="1">
+          <mxGeometry x="8" y="58" width="222" height="358" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-20" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Time&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Dimension&amp;nbsp;&lt;/font&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="222.5" y="757" width="200" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-21" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Time (PK)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Time Id&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Hour&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Minute&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;DaytimeName&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Shifts&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;DayNight&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="QLK3rIu6q7QLbEW4n9um-20" vertex="1">
+          <mxGeometry x="11" y="-2" width="94" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-22" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Airport&amp;nbsp;&lt;/font&gt;Dimension&amp;nbsp;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="972" y="435" width="222" height="271" as="geometry" />
+        </mxCell>
+        <mxCell id="QLK3rIu6q7QLbEW4n9um-23" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;Airport Key (SK)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Airport Id&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Airport Name&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Country&lt;/div&gt;&lt;div style=&quot;&quot;&gt;City&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Latitude&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Longitude&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Region&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;Number of runways&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Terminal count&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Number of gates&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;ATC capacity&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Aircraft Parking Stands&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Guest Capacity&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="QLK3rIu6q7QLbEW4n9um-22" vertex="1">
+          <mxGeometry x="13" y="29" width="141" height="228" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
